@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#0C0C0C">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval_bacround">
+
+
+        <EditText
+            android:id="@+id/bottomSheetEditTextDialog"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+
+            android:background="@null"
+            android:hint="Откуда - Москва"
+            android:textColor="@color/white"
+            android:textColorHint="#9F9F9F" />
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="-320dp"
+            android:layout_marginTop="50dp"
+            android:background="#3E3F43" />
+
+        <EditText
+            android:id="@+id/editText2Dialog"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-321dp"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:hint="Куда - Турция"
+            android:textColor="@color/white"
+            android:textColorHint="#9F9F9F" />
+
+        <ImageView
+            android:id="@+id/serch"
+            android:layout_width="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="-361dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/searvh" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="-25dp"
+            app:srcCompat="@drawable/vector" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="28dp"
+        app:srcCompat="@drawable/ahrd" />
+
+    <ImageView
+        android:id="@+id/Kuda"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="-96dp"
+        app:srcCompat="@drawable/kuda" />
+
+    <ImageView
+        android:id="@+id/weekend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-80dp"
+        app:srcCompat="@drawable/weekwnd" />
+
+    <ImageView
+        android:id="@+id/hot"
+        android:layout_width="70dp"
+        android:layout_marginTop="-74dp"
+        android:layout_marginLeft="270dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/resource__1" />
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="216dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/oval_bacround">
+
+        <ImageView
+            android:id="@+id/stambul"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/stambul" />
+
+        <ImageView
+            android:id="@+id/sochi"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginTop="67dp"
+            android:layout_marginLeft="-330dp"
+            app:srcCompat="@drawable/sochi" />
+
+        <ImageView
+            android:id="@+id/puhket"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="-330dp"
+            app:srcCompat="@drawable/puhcet" />
+    </LinearLayout>
+
+</LinearLayout>

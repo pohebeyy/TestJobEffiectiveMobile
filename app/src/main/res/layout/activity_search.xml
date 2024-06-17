@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0C0C0C"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/oval_bacround">
+
+        <EditText
+            android:id="@+id/bottomSheetEditTextSearch"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:background="@null"
+            android:hint="Откуда - Москва"
+            android:textColor="@color/white"
+            android:textColorHint="#9F9F9F" />
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="-320dp"
+            android:layout_marginTop="50dp"
+            android:background="#3E3F43" />
+
+        <EditText
+            android:id="@+id/editText2Search"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-321dp"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:hint="Куда - Турция"
+            android:textColor="@color/white"
+            android:textColorHint="#9F9F9F" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-349dp"
+            android:layout_marginTop="42dp"
+            app:srcCompat="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/swap"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/swap" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="-25dp"
+            app:srcCompat="@drawable/union" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-350dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-120dp"
+            android:layout_marginLeft="370dp"
+            android:padding="16dp">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/oval_data"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="8dp">
+
+                <EditText
+                    android:id="@+id/backAir"
+                    android:layout_width="89dp"
+                    android:layout_height="30dp"
+                    android:textSize="11sp"
+                    android:hint="Обратно"
+                    android:layout_marginTop="-8dp"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#9F9F9F" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="89dp"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/oval_data"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="8dp">
+                <EditText
+                    android:id="@+id/editData"
+                    android:layout_width="89dp"
+                    android:layout_height="30dp"
+                    android:textSize="11sp"
+                    android:hint="Дата отправления"
+                    android:layout_marginTop="-8dp"
+                    android:background="@null"
+
+                    android:textColor="@color/white"
+                    android:textColorHint="#9F9F9F" />
+
+
+            </LinearLayout>
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eco"
+                    android:contentDescription="Item 3" />
+            </LinearLayout>
+
+            <!-- Item 4 (partially visible) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginTop="120dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/small_button"
+                    android:contentDescription="Item 4" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/oval"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="149dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="-65dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/resource__" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainer"
+            android:layout_width="340dp"
+            android:layout_height="205dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="-8dp"
+            android:paddingTop="16dp"
+
+            android:paddingRight="16dp" />
+
+        <ImageView
+            android:id="@+id/givaAll"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/all" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/all_bilits" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/philtr" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+
+        android:background="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/tabs_container2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="69dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:srcCompat="@drawable/tabs_container3" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="69dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:srcCompat="@drawable/tabs_container4" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="69dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:srcCompat="@drawable/tabs_container1" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="69dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:srcCompat="@drawable/tabs_container8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/oval"
+    android:padding="16dp">
+
+    <!-- LinearLayout для badge -->
+    <LinearLayout
+        android:id="@+id/badge_container"
+        android:layout_width="126dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/oval_all">
+
+        <TextView
+            android:id="@+id/badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#FFFFFF"
+            android:text="pizdatu"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+
+
+    <TextView
+        android:id="@+id/departure_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="vilet"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/arrival_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="pribitie"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="-20dp"/>
+
+    <TextView
+        android:id="@+id/departureAirport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#9F9F9F"
+        android:text="otkuda"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/arrivalAirport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#9F9F9F"
+        android:text="kuda"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="-20dp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FFFF"
+        android:text="time"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="-40dp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FFFF"
+        android:text="/Без багажа"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-20dp"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="-15dp"
+        app:srcCompat="@drawable/red" />
+</LinearLayout>

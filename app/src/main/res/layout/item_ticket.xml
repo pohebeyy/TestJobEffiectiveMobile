@@ -1,0 +1,49 @@
+<!-- res/layout/item_ticket.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="xuiii"
+        android:fontFamily="@font/sfprodisplay"
+        android:layout_marginTop="-7dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/sfprodisplay"
+        android:layout_marginTop="-23dp"
+        android:layout_marginLeft="210dp"
+
+        android:textColor="#4C95FE" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="12dp"
+        android:ellipsize="end"
+
+        android:singleLine="true" />
+    <ImageView
+        android:id="@+id/ivAirlineLogo"
+        android:layout_width="10dp"
+
+        android:layout_height="10dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginTop="-30dp"
+        />
+
+</LinearLayout>
