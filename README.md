@@ -20,3 +20,12 @@
 
 ![image](https://github.com/pohebeyy/TestJobEffiectiveMobile/assets/132779666/89f8f623-be66-4714-a4c6-8cb7fc9127b8)
 
+
+
+
+
+
+
+
+
+apk - https://drive.google.com/drive/u/0/folders/1yWzBm0gD_kkZOQKCu28y-z1kxWN8wXN_
