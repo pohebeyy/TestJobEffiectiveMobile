@@ -13,13 +13,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.testtaskandroid.Adapters.MyAdapter
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.gson.Gson
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
+    @Inject
+    lateinit var gson: Gson
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        (applicationContext as MyApplication).appComponent.inject(this)
         setContentView(R.layout.activity_main)
 
         val json = """{
@@ -30,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             ]
         }"""
 
-        val offers = Gson().fromJson(json, OffersResponse::class.java).offers.map {
+        val offers = gson.fromJson(json, OffersResponse::class.java).offers.map {
             Offer(it.id, it.title, it.town, it.price.value)
         }
 
@@ -41,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         val editText1: EditText = findViewById(R.id.editText1)
         val editText2: EditText = findViewById(R.id.editText2)
 
-        // Apply the RussianInputFilter to the EditText fields
+
         val russianFilter = RussianInputFilter()
         editText1.filters = arrayOf(russianFilter)
         editText2.filters = arrayOf(russianFilter)
@@ -69,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         val editText1: EditText = findViewById(R.id.editText1)
         val editText2: EditText = findViewById(R.id.editText2)
 
-        // Set texts in bottom sheet dialog
+
         bottomSheetEditText1.setText(editText1.text.toString())
         bottomSheetEditText2.setText(editText2.text.toString())
 

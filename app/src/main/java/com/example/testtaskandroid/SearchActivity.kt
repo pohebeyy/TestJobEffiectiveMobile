@@ -31,7 +31,6 @@ class SearchActivity : AppCompatActivity() {
         val back = findViewById<ImageView>(R.id.back)
         val giveAll = findViewById<ImageView>(R.id.givaAll)
 
-        // Swap button functionality
         swap.setOnClickListener {
             val tempText = editText1.text.toString()
             editText1.setText(editText2.text.toString())

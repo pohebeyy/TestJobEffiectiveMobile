@@ -41,6 +41,8 @@ dependencies {
     implementation ("com.squareup.okhttp3:okhttp:4.10.0")
     implementation (libs.material)
     kapt ("com.google.dagger:dagger-compiler:2.51.1")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.5.0")
     implementation ("com.google.dagger:dagger:2.51.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
