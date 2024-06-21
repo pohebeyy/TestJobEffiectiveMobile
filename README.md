@@ -1,4 +1,6 @@
 Приложение для поиска билетов 
+
+
 ![image](https://github.com/pohebeyy/TestJobEffiectiveMobile/assets/132779666/5e8503b2-1e7a-4e11-9b56-033f914b4826)
 
 
